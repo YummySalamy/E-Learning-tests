@@ -1,0 +1,10 @@
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    animation: fadeIn 0.5s;
+}

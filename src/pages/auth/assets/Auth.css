@@ -1,0 +1,77 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cec3c3;
+  background-image: url('https://datapath.ai/assets/img/HeroHome.svg');
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s forwards;
+}
+
+.form-container span {
+  color:#ff850aaa;
+  margin-bottom: 20px;
+  &::after {
+    content: '🧐';
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.login-form-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.login-icon {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    filter: drop-shadow(0 0 2em #ff850aaa);
+    padding: 20px;
+    transition: all ease-in-out 0.25s;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.google-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background:
+        linear-gradient(180deg,  #facca0, #ffb76f) padding-box,
+        linear-gradient(217deg, #ffbf4f, #c86dac) border-box;
+}
+
+.error {
+    margin: 0;
+  color: red;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
