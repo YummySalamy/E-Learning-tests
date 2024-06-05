@@ -10,6 +10,7 @@ import Application from './pages/app/Application'
 import Dashboard from './pages/app/principal/Dashboard'
 import Configuration from './pages/app/extra/Configuration'
 import Courses from './pages/app/content/Courses'
+import Events from './pages/app/extra/Events'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
@@ -25,7 +26,7 @@ function App() {
           <Route path='/app' element={<Application />} />
           <Route path='/app/dashboard' element={<Application children={<Dashboard />} />} />
           <Route path='/app/courses' element={<Application children={<Courses />} />} />
-          <Route path='/app/events' element={<Application children={<Dashboard />} />} />
+          <Route path='/app/events' element={<Application children={<Events />} />} />
           <Route path='/app/settings' element={<Application children={<Configuration />} />} />
         </Routes>
       </Router>

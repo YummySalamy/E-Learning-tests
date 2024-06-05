@@ -23,12 +23,12 @@ const MenuItems = [
         path: "/app/courses",
     },
     {
+        subheader: "Extra",
+    },
+    {
         title: "Eventos",
         icon: <FaCalendarAlt />,
         path: "/app/events",
-    },
-    {
-        subheader: "Extra",
     },
     {
         title: "Configuración",

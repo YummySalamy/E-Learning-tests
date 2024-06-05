@@ -20,7 +20,13 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar-logo">
-                <img src={dataLogo} alt="logo" />
+                <img 
+                    src={dataLogo} 
+                    alt="logo" 
+                    onClick={() => {
+                        open('https://datapath.teachable.com/courses/category/cursos-libres');
+                    }}
+                />
             </div>
             <div className="sidebar-nav">
                 {items.map((item, index) => (

@@ -2,4 +2,61 @@
 
 .courses {
     animation: fadeIn 0.5s;
+    height: 100%;
+    margin-top: 2em;
+    margin-inline: 2em;
+}
+
+.course-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+    height: 100%;
+}
+
+.course-admin-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+}
+
+.course-admin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.course-admin-resources {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.course-admin-resources iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.course-admin-chat {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.course-admin-close {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 20px;
 }

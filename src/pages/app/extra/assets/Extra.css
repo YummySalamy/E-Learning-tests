@@ -1,3 +1,29 @@
 .settings {
   animation: fadeIn 0.5s;
 }
+
+.events {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.upcoming-events-info {
+  display: flex;
+  gap: 1em;
+  height: 100%;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card-embedded-video {
+  
+}
+
+.card-embedded-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}

@@ -8,6 +8,9 @@
 .app-content {
     width: 100%;
     animation: fadeIn 0.5s;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 @keyframes fadeIn {

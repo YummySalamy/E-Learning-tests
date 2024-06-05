@@ -31,7 +31,9 @@
   padding: 2em;
   border-radius: 1em;
   box-shadow: 0 0 2em #00000022;
-  background: linear-gradient(217deg, #e7e2d9, #f38751);
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
   transition: all ease-in-out 0.25s;
   text-align: center;
 }

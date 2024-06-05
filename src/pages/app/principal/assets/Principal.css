@@ -8,3 +8,20 @@
     background-color: #f5f5f5;
     animation: fadeIn 0.5s;
 }
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    max-width: 700px;
+}
+
+.learning-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+}
