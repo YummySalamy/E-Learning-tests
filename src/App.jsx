@@ -20,7 +20,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Application />} />
+          <Route path='/' element={<LandingPage />} />
           <Route path='/login' element={<BlankLayout children={<Login />} />} />
           <Route path='/register' element={<BlankLayout children={<Register />} />} />
           <Route path='/app' element={<Application />} />
