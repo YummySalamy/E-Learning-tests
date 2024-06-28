@@ -71,7 +71,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-width: 550px;
+    transition: all ease-in-out 0.25s;
 }
 
 .sessions-header {
@@ -189,6 +190,105 @@
 
 .assignation-details-button:hover {
     color: darkblue;
+}
+
+/* Assignation Inspector */
+
+.assignation-info {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px #eb8136;
+}
+
+.assignation-info-header {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.assignation-info-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.assignation-info-state {
+    font-size: 1em;
+    color: #fc9140;
+    font-style: italic;
+}
+
+.assignation-info-content {
+    margin-top: 10px;
+}
+
+.assignation-info-description {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.assignation-info-comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 400px;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.assignation-info-comments-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.assignation-info-comment {
+    padding: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.assignation-info-comment:last-child {
+    border-bottom: none;
+}
+
+.assignation-info-comment-user {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.assignation-info-comment-comment {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.assignation-info-comment-date {
+    font-size: 0.9em;
+    color: #999;
+    text-align: right;
+}
+
+.assignation-info-add-comment {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+    justify-content: center;
+    padding-block: 10px;
 }
 
 @keyframes slideFromTop {

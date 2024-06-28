@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { FaCheck, FaFolder, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { IoIosCloseCircleOutline, IoIosCall } from "react-icons/io";
 import { BiSolidVideoRecording } from "react-icons/bi";
+import AssignationInfo from './AssignationInfo';
 import '../assets/Content.css';
 
 const SessionsList = ({ sessions, onClose }) => {
     const [list, setList] = useState([]);
     const [expandedSessions, setExpandedSessions] = useState({});
+    const [selectedAssignation, setSelectedAssignation] = useState(null);
 
     useEffect(() => {
         setList(sessions);
@@ -21,6 +23,7 @@ const SessionsList = ({ sessions, onClose }) => {
 
     return (
         <div className='sessions'>
+            { !selectedAssignation ? (
             <div className="sessions-list">
                 {list.map((session, index) => (
                     <div key={index} className="session-item">
@@ -58,7 +61,10 @@ const SessionsList = ({ sessions, onClose }) => {
                                     <div key={idx} className="assignation-item">
                                         <div className="assignation-title">{assignation.title}</div>
                                         <div className="assignation-state">{assignation.state}</div>
-                                        <button className="assignation-details-button">Ver detalles</button>
+                                        <button 
+                                            className="assignation-details-button"
+                                            onClick={() => setSelectedAssignation(assignation)}
+                                        >Ver detalles</button>
                                     </div>
                                 ))}
                             </div>
@@ -66,6 +72,10 @@ const SessionsList = ({ sessions, onClose }) => {
                     </div>
                 ))}
             </div>
+            ) : (
+                <AssignationInfo assignation={selectedAssignation} setAssignation={setSelectedAssignation} />
+            )
+            }
             <button className="sessions-close-button" onClick={onClose}>
                 <IoIosCloseCircleOutline />
             </button>

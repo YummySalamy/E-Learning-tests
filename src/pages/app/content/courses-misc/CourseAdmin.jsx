@@ -50,7 +50,7 @@ const dummySessions = [
         assignations: [
             {
                 title: 'Entrega de proyecto final',
-                state: 'Pendiente'
+                state: 'Finalizado'
             }
         ]
     },
