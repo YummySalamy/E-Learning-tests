@@ -1,0 +1,167 @@
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .discount {
+    color: red;
+    margin-right: 1rem;
+  }
+  
+  .price {
+    margin-right: 1rem;
+  }
+  
+  .certify-button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  /* src/components/MainContent.css */
+  .main-content {
+    padding: 1rem;
+    background-color: #f0f4f8;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  
+  .main-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* src/components/Timeline.css */
+  .timeline {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  /* .month {
+    font-size: 1rem;
+    background-color: #000080;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+  
+  .status {
+    font-size: 1rem;
+    background-color: #32cd32;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+  } */
+  
+  /* src/components/TrainingCard.css */
+  .training-card {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 1rem;
+    flex: 1;
+  }
+  
+  .training-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .training-card h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* .training-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .training-card li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+    
+  }
+   */
+
+   .training-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .training-card li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    padding-block: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .training-card li::before {
+    margin-top: 0.5rem;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 10px;
+    height: 10px;
+    /* background-color: #26da7d; */
+    background-color: #eb8136;
+    border-radius: 50%;
+  }
+  
+  .training-card li::after {
+    margin-top: 1rem;
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1.5rem;
+    width: 2px;
+    height: calc(100% - 1rem);
+    /* background-color: #26da7d; */
+    background-color: #eb8136;
+  }
+  
+  .training-card li:last-child::after {
+    display: none;
+  }
+
+  /* .step-item {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  } */

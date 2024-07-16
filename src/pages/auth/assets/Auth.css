@@ -61,6 +61,54 @@
         linear-gradient(217deg, #ffbf4f, #c86dac) border-box;
 }
 
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+}
+
+.step-label {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.current-step {
+  background-color: #26b6da;
+  color: white;
+}
+
+.completed-step {
+  background-color: #26da7d;
+  color: white;
+}
+
+.step-line {
+  width: 50px;
+  height: 4px;
+  background-color: #e0e0e0;
+  margin: 0 8px;
+  transition: background-color 0.3s;
+}
+
+.completed-line {
+  background-color: #26da7d;
+}
+
+
 .error {
     margin: 0;
   color: red;

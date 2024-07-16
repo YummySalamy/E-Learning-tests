@@ -22,8 +22,7 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }
-);
+    }, []);
 
     return (
         <header className='header' style={{backgroundColor: hasScrolled ? '#fff' : 'transparent', borderBottom: hasScrolled ? '1px solid #eaeaea' : 'none'}}>

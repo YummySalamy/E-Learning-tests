@@ -68,15 +68,15 @@ const Dashboard = () => {
                 <h2>Progreso de aprendizaje</h2>
                 <Grid columns={3}>
                     <Card>
-                        <h3>Envío de asignaciones</h3>
+                        <h3>Asistencia</h3>
                         <ProgressBar progress="72" showPercentage={true} />
                     </Card>
                     <Card>
-                        <h3>Participación en foros</h3>
+                        <h3>Proyectos</h3>
                         <ProgressBar progress="50" showPercentage={true} />
                     </Card>
                     <Card>
-                        <h3>Calificación de cursos</h3>
+                        <h3>Tareas</h3>
                         <ProgressBar progress="90" showPercentage={true} />
                     </Card>
                 </Grid>

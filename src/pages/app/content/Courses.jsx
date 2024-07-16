@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Button from '../../../components/Button';
 import Card from '../../../components/Card';
 import CourseAdmin from './courses-misc/CourseAdmin';
 import Grid from '../../../components/Grid';
 import ProgressCircle from '../../../components/charts/ProgressCircle';
 import Select from '../../../components/Select';
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 import './assets/Content.css';
 
@@ -57,17 +59,29 @@ const Courses = () => {
     return (
         <div className="courses">
             { selectedTab &&
-            <Select
-                label="Filtrar por"
-                options={[
-                    {label: 'Mis cursos', value: 'my-courses'},
-                    {label: 'Otros cursos', value: 'other-courses'},
-                ]}
-                value={selectedTab}
-                onChange={(value) => {
-                    setSelectedTab(value);
-                }}
-            />
+            <div>
+                <Select
+                    label="Filtrar por"
+                    options={[
+                        {label: 'Mis cursos', value: 'my-courses'},
+                        {label: 'Otros cursos', value: 'other-courses'},
+                    ]}
+                    value={selectedTab}
+                    onChange={(value) => {
+                        setSelectedTab(value);
+                    }}
+                />
+                <div>
+                    <Button
+                        onClick={() => {
+                            window.open('https://airtable.com/app13A0YN3t01fNjb/shrwcAy43j4R7tj7c');
+                        }}
+                        icon={<IoIosAddCircleOutline />}
+                    >
+                        Matricular Curso
+                    </Button>
+                </div>
+            </div>
             }
             { selectedTab === 'my-courses' ? (
             <div className="courses-main-tab">
