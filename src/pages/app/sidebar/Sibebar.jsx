@@ -11,8 +11,6 @@ const Sidebar = () => {
     useEffect(() => {
         const currentPath = window.location.pathname;
         const path = currentPath;
-        console.log('currentPath:', currentPath);
-        console.log('path:', path);
         setActive(path);
     }
     , [active]);

@@ -345,6 +345,21 @@
     margin-right: 1rem;
   }
 
+
+  
+.inspect-new-course {
+    background-color: #e8e8e8;
+    border: 1px solid #333;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 @keyframes slideFromTop {
     from {
         transform: translateY(-100%);

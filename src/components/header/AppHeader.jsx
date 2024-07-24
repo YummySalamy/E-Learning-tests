@@ -9,9 +9,9 @@ const AppHeader = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     const [menuItems, setMenuItems] = useState([
+        'Perfil',
         'Cursos',
         'Carreras',
-        'Diplomados',
         'Empresas'
     ]);
 
